@@ -7,7 +7,7 @@
       <p class="wow fadeInUp animated">Service what we provide for our client</p>
       <div id="carousel7" class="owl-carousel owl-theme owl-loaded owl-drag">
 		<div class="owl-stage-outer" id="carousel171">
-		<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 720px;" id="carousel172">
+		<div class="owl-stage" style="transform: translate3d(-1823px, 0px, 0px); transition: 0.25s; width: 4102px;" id="carousel172">
 			
 		</div>
 		</div>
@@ -190,7 +190,7 @@
 				var serviceItem = document.createElement('div');
 				serviceItem.classList.add('owl-item');
 				serviceItem.classList.add('active');
-				serviceItem.style.cssText ="width: 400px; margin-right: 30px;";
+				serviceItem.style.cssText ="width: 425.76px; margin-right: 30px;";
 
 				var serviceContent = `
 				<div class="item">
