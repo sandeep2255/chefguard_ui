@@ -1,16 +1,11 @@
 <?php include("include/header.php")?>
 <?php include("include/home-slider.php")?>
 <section class="main-service" id="hp2">
-    <div class="container">
+    <div class="container" id="service-carousel">
       <h4 class="wow fadeInUp animated">Our Services</h4>
       <a class="vc1 wow slideInRight animated" href="services.php">View more...</a>
       <p class="wow fadeInUp animated">Service what we provide for our client</p>
-      <div id="carousel7" class="owl-carousel owl-theme owl-loaded owl-drag">
-		<div class="owl-stage-outer" id="carousel171">
-		<div class="owl-stage" style="transform: translate3d(-1823px, 0px, 0px); transition: 0.25s; width: 4102px;" id="carousel172">
-			
-		</div>
-		</div>
+      
     </div>
   </section>
 	<section class="Product-wrap" id="hp3">
@@ -132,7 +127,7 @@
 				<h3>Behind</br>
 					The Brand</h3> <img src="images/ceo-chefguard.png" class="img-fluid hvr-bounce-in"> </div>
 			<div class="intro-rht wow fadeInUp animated">
-				<p>Chefguard, founded by Mrs. Smitha in Malapuram district, Kerala, has become a leading supplier of domestic and commercial stoves in the state. Chefguard is highly regarded among gas burner, gas stove, and gas cylinder trolley dealers. The company offers online purchasing, maintenance booking, and complaint registration for customer convenience. Mrs. Smitha, the CEO, acknowledges the journey from a startup to a household name and remains committed to progress. The company empowers women and employs many homemakers who bring a unique perspective to household kitchen needs, resulting in satisfied customers. Chefguard not only serves domestic needs but also caters to commercial standards with satisfied customers in the hospitality industry.</p>
+				<p style="text-align: justify;">Chefguard, founded by Mrs. Smitha in Malapuram district, Kerala, has become a leading supplier of domestic and commercial stoves in the state. Chefguard is highly regarded among gas burner, gas stove, and gas cylinder trolley dealers. The company offers online purchasing, maintenance booking, and complaint registration for customer convenience. Mrs. Smitha, the CEO, acknowledges the journey from a startup to a household name and remains committed to progress. The company empowers women and employs many homemakers who bring a unique perspective to household kitchen needs, resulting in satisfied customers. Chefguard not only serves domestic needs but also caters to commercial standards with satisfied customers in the hospitality industry.</p>
 				<h4>Our Vision</h4>
 				<p class="c7">Our largest vision is to protect every house from gas stove accidents. Even if it's anywhere around the world, we should be able to provide our services. So our group's main vision is to protect each and every life. Because Every Life Matters.</p>
 			</div>
@@ -183,31 +178,44 @@
 		})
 		.then(function(data) {
 			if (data.success) {
-			var services = data.data[0];
-			var carousel = document.getElementById('carousel172');
+				var services = data.data[0];
+				var carousel = document.getElementById('service-carousel');
 
-			services.forEach(function(service) {
 				var serviceItem = document.createElement('div');
-				serviceItem.classList.add('owl-item');
-				serviceItem.classList.add('active');
-				serviceItem.style.cssText ="width: 425.76px; margin-right: 30px;";
+				serviceItem.classList.add('owl-carousel', 'owl-theme');
+				serviceItem.id = `carousel7`;
 
-				var serviceContent = `
-				<div class="item">
-				<div class="main-serv-inr wow fadeInUp animated">
-					<img src="${service.images[0].image_url}" class="img-fluid" > 
-					<img src="${service.Logo_url}" class="img-fluid sec-icn hvr-bounce-in">
-					<div class="cont-sec">
-					<h4>${service.Service_name}</h4>
-					<p>${service.Description || 'Description not available'}</p>
-					</div>
-				</div>
-				</div>
-				`;
+				services.forEach(function(service) {
+					var serviceContent = `
+					<div class="item">
+						<div class="main-serv-inr wow fadeInUp animated">
+							<img src="${service.images[0].image_url}" class="img-fluid"> 
+							<img src="${service.Logo_url}" class="img-fluid sec-icn hvr-bounce-in">
+							<div class="cont-sec">
+								<h4>${service.Service_name}</h4>
+								<p style="text-align: justify;">${service.Description || 'Description not available'}</p>
+							</div>
+						</div>
+					</div>`;
+					
+					// Append service content to the serviceItem
+					serviceItem.insertAdjacentHTML('beforeend', serviceContent);
+				});
 
-				serviceItem.innerHTML = serviceContent;
+				// Append the entire serviceItem container to the carousel
 				carousel.appendChild(serviceItem);
-			});
+
+				// Initialize Owl Carousel after dynamically adding the content
+				$('#carousel7').owlCarousel({
+					loop: true,
+					autoplay: true,
+					autoplayTimeout: 5000,
+					autoplayHoverPause: true,
+					margin: 10,
+					nav: true,
+					items: 3 // Adjust settings as needed
+				});
+
 			} else {
 			console.error('API call failed');
 			}
