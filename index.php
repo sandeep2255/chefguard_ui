@@ -293,7 +293,7 @@
 								<h2>${product.Product_name}</h2>
 								<h3>${product.Model || 'Category not available'}</h3>
 								<h1>AED ${product.offers[0].offer_price}</h1>
-								<h6>AED ${product.Price}<label>${Math.round(product.offers[0].offer_percentage)}% exchange offer</label></h6> </div>
+								<h6>AED ${product.Price}<label>Exchange off upto ${Math.round(product.offers[0].offer_percentage)}%</label></h6> </div>
 								
 						</div>
 					</div>
