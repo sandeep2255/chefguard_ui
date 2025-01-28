@@ -8,51 +8,51 @@
       
     </div>
   </section>
-	<section class="Product-wrap" id="hp3">
-		<div class="container">
-			<h4 class="wow fadeInDown animated">Products</h4> <a class="vc wow slideInRight animated" href="#">View more...</a>
-			<p class="wow fadeInDown animated">Quality Products for Reliable Performance</p>
-			<div id="carousel5" class="owl-carousel owl-theme">
-				<div class="item wow fadeInUp animated">
-					<div class="pro-list"> <img src="images/pro-pic-03.png" class="img-fluid">
-						<div class="title-wrp">
-							<h2>STEEL TOP SINGLE BURNER</h2>
-							<h3>Domestic stove</h3>
-							<h1>AED 90</h1>
-							<h6>AED 150<label>40% off</label></h6> </div>
-					</div>
-				</div>
-				<div class="item wow fadeInUp animated">
-					<div class="pro-list"> <img src="images/pro-pic-04.png" class="img-fluid">
-						<div class="title-wrp">
-							<h2>STEEL TOP SINGLE BURNER</h2>
-							<h3>Domestic stove</h3>
-							<h1>AED 90</h1>
-							<h6>AED 150<label>40% off</label></h6> </div>
-					</div>
-				</div>
-				<div class="item wow fadeInUp animated">
-					<div class="pro-list"> <img src="images/pro-pic-01.png" class="img-fluid">
-						<div class="title-wrp">
-							<h2>STEEL TOP SINGLE BURNER</h2>
-							<h3>Domestic stove</h3>
-							<h1>AED 90</h1>
-							<h6>AED 150<label>40% off</label></h6> </div>
-					</div>
-				</div>
-				<div class="item wow fadeInUp animated">
-					<div class="pro-list"> <img src="images/pro-pic-02.png" class="img-fluid">
-						<div class="title-wrp">
-							<h2>STEEL TOP SINGLE BURNER</h2>
-							<h3>Domestic stove</h3>
-							<h1>AED 90</h1>
-							<h6>AED 150<label>40% off</label></h6> </div>
-					</div>
+<section class="Product-wrap" id="hp3">
+	<div class="container" id="product-carousel">
+		<h4 class="wow fadeInDown animated">Products</h4> <a class="vc wow slideInRight animated" href="#">View more...</a>
+		<p class="wow fadeInDown animated">Quality Products for Reliable Performance</p>
+		<!-- <div id="carousel5" class="owl-carousel owl-theme">
+			<div class="item wow fadeInUp animated">
+				<div class="pro-list"> <img src="images/pro-pic-03.png" class="img-fluid">
+					<div class="title-wrp">
+						<h2>STEEL TOP SINGLE BURNER</h2>
+						<h3>Domestic stove</h3>
+						<h1>AED 90</h1>
+						<h6>AED 150<label>40% off</label></h6> </div>
 				</div>
 			</div>
-		</div>
-		<div class="pro-inr"></div>
-	</section>
+			<div class="item wow fadeInUp animated">
+				<div class="pro-list"> <img src="images/pro-pic-04.png" class="img-fluid">
+					<div class="title-wrp">
+						<h2>STEEL TOP SINGLE BURNER</h2>
+						<h3>Domestic stove</h3>
+						<h1>AED 90</h1>
+						<h6>AED 150<label>40% off</label></h6> </div>
+				</div>
+			</div>
+			<div class="item wow fadeInUp animated">
+				<div class="pro-list"> <img src="images/pro-pic-01.png" class="img-fluid">
+					<div class="title-wrp">
+						<h2>STEEL TOP SINGLE BURNER</h2>
+						<h3>Domestic stove</h3>
+						<h1>AED 90</h1>
+						<h6>AED 150<label>40% off</label></h6> </div>
+				</div>
+			</div>
+			<div class="item wow fadeInUp animated">
+				<div class="pro-list"> <img src="images/pro-pic-02.png" class="img-fluid">
+					<div class="title-wrp">
+						<h2>STEEL TOP SINGLE BURNER</h2>
+						<h3>Domestic stove</h3>
+						<h1>AED 90</h1>
+						<h6>AED 150<label>40% off</label></h6> </div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<div class="pro-inr"></div>
+</section>
 	<!-- <section class="Product-wrap" id="hp3">
 		<div class="container">
 			<h4 class="wow fadeInDown animated">Products</h4>
@@ -125,9 +125,27 @@
 		<div class="container">
 			<div class="intro-lft wow fadeInUp animated">
 				<h3>Behind</br>
-					The Brand</h3> <img src="images/ceo-chefguard.png" class="img-fluid hvr-bounce-in"> </div>
+					The Brand</h3>
+					<div class="btb-wrp">
+					<div class="btb">
+						<img src="images/btb-01.png" class="img-fluid hvr-bounce-in"> 
+						<h5>Smitha Suraksha</h5>
+						<h6>Chairman</h6>						
+					</div>		
+					<div class="btb">
+						<img src="images/btb-02.jpeg" class="img-fluid hvr-bounce-in"> 
+						<h5>Shanavas</h5>
+						<h6>Director</h6>						
+					</div>	
+					<div class="btb">
+					<img src="images/btb-03.jpeg" class="img-fluid hvr-bounce-in"> 
+						<h5>Amala Gireesan</h5>
+						<h6>Director</h6>							
+					</div>
+					</div>				
+				</div>
 			<div class="intro-rht wow fadeInUp animated">
-				<p style="text-align: justify;">Chefguard, founded by Mrs. Smitha in Malapuram district, Kerala, has become a leading supplier of domestic and commercial stoves in the state. Chefguard is highly regarded among gas burner, gas stove, and gas cylinder trolley dealers. The company offers online purchasing, maintenance booking, and complaint registration for customer convenience. Mrs. Smitha, the CEO, acknowledges the journey from a startup to a household name and remains committed to progress. The company empowers women and employs many homemakers who bring a unique perspective to household kitchen needs, resulting in satisfied customers. Chefguard not only serves domestic needs but also caters to commercial standards with satisfied customers in the hospitality industry.</p>
+				<p>Chefguard, founded by Mrs. Smitha in Malapuram district, Kerala, has become a leading supplier of domestic and commercial stoves in the state. Chefguard is highly regarded among gas burner, gas stove, and gas cylinder trolley dealers. The company offers online purchasing, maintenance booking, and complaint registration for customer convenience. Mrs. Smitha, the CEO, acknowledges the journey from a startup to a household name and remains committed to progress. The company empowers women and employs many homemakers who bring a unique perspective to household kitchen needs, resulting in satisfied customers. Chefguard not only serves domestic needs but also caters to commercial standards with satisfied customers in the hospitality industry.</p>
 				<h4>Our Vision</h4>
 				<p class="c7">Our largest vision is to protect every house from gas stove accidents. Even if it's anywhere around the world, we should be able to provide our services. So our group's main vision is to protect each and every life. Because Every Life Matters.</p>
 			</div>
@@ -234,28 +252,68 @@
         })
         .then(function(data) {
             if (data.success) {
-                var products = data.data[0]; // Adjust based on your API response structure
-                var carousel = document.getElementById('carousel5');
+                var products = data.data[0];
+				var carousel2 = document.getElementById('product-carousel');
+
+				var productItem = document.createElement('div');
+				productItem.classList.add('owl-carousel', 'owl-theme');
+				productItem.id = `carousel5`;
 
                 products.forEach(function(product) {
-                    var productItem = document.createElement('div');
-                    productItem.classList.add('item');
+                    // var productItem = document.createElement('div');
+                    // productItem.classList.add('item');
 
-                    var productContent = `
-                        <div class="pro-list">
-							<img src="${product.images[0].image_url}" class="img-fluid" alt="${product.title}">
+                    // var productContent = `
+                    //     <div class="pro-list">
+					// 		<img src="${product.images[0].image_url}" class="img-fluid" alt="${product.title}">
+					// 		<div class="title-wrp">
+					// 			<h2>${product.Product_name}</h2>
+					// 			<h3>${product.Model || 'Category not available'}</h3>
+					// 			<h1>AED ${product.Price}</h1>
+					// 			<h6>AED 150<label>40%</label></h6>
+					// 		</div>
+					// 	</div>
+                    // `;
+
+
+					// <div class="item wow fadeInUp animated">
+					// 	<div class="pro-list"> <img src="images/pro-pic-03.png" class="img-fluid">
+					// 		<div class="title-wrp">
+					// 			<h2>STEEL TOP SINGLE BURNER</h2>
+					// 			<h3>Domestic stove</h3>
+					// 			<h1>AED 90</h1>
+					// 			<h6>AED 150<label>40% off</label></h6> </div>
+					// 	</div>
+					// </div>
+					var productContent = `
+					
+					<div class="item wow fadeInUp animated">
+						<div class="pro-list"> <img src="${product.images[0].image_url}" class="img-fluid" alt="${product.title}">
 							<div class="title-wrp">
 								<h2>${product.Product_name}</h2>
 								<h3>${product.Model || 'Category not available'}</h3>
-								<h1>AED ${product.Price}</h1>
-								<h6>AED 150<label>40%</label></h6>
-							</div>
+								<h1>AED ${product.offers[0].offer_price}</h1>
+								<h6>AED ${product.Price}<label>${Math.round(product.offers[0].offer_percentage)}% exchange offer</label></h6> </div>
+								
 						</div>
-                    `;
-
-                    productItem.innerHTML = productContent;
-                    carousel.appendChild(productItem);
+					</div>
+					`
+					productItem.insertAdjacentHTML('beforeend', productContent);
+                    // productItem.innerHTML = productContent;
+                    // carousel.appendChild(productItem);
                 });
+				carousel2.appendChild(productItem);
+
+				// Initialize Owl Carousel after dynamically adding the content
+				$('#carousel5').owlCarousel({
+					loop: true,
+					autoplay: true,
+					autoplayTimeout: 5000,
+					autoplayHoverPause: true,
+					margin: 10,
+					nav: true,
+					items: 4 // Adjust settings as needed
+				});
             } else {
                 console.error('API call failed. Response:', data.message || 'Unknown error');
             }
