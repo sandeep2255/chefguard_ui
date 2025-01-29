@@ -226,12 +226,28 @@
 				// Initialize Owl Carousel after dynamically adding the content
 				$('#carousel7').owlCarousel({
 					loop: true,
-					autoplay: true,
-					autoplayTimeout: 5000,
-					autoplayHoverPause: true,
-					margin: 10,
 					nav: true,
-					items: 3 // Adjust settings as needed
+					dots: false,
+					margin: 30,
+					autoplay: true,
+					autoplayTimeout: 6000,
+					responsiveBaseElement: 'body',
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1,
+							nav: true
+						},
+						600: {
+							items: 3,
+							nav: true
+						},
+						1000: {
+							items: 3,
+							nav: true,
+							loop: true
+						}
+					}
 				});
 
 			} else {
@@ -307,12 +323,28 @@
 				// Initialize Owl Carousel after dynamically adding the content
 				$('#carousel5').owlCarousel({
 					loop: true,
-					autoplay: true,
-					autoplayTimeout: 5000,
-					autoplayHoverPause: true,
-					margin: 10,
 					nav: true,
-					items: 4 // Adjust settings as needed
+					dots: false,
+					margin: 10,
+					autoplay: true,
+					autoplayTimeout: 6000,
+					responsiveBaseElement: 'body',
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1,
+							nav: true
+						},
+						600: {
+							items: 4,
+							nav: true
+						},
+						1000: {
+							items: 4,
+							nav: true,
+							loop: true
+						}
+					}
 				});
             } else {
                 console.error('API call failed. Response:', data.message || 'Unknown error');
